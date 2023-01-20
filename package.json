@@ -1,0 +1,31 @@
+{
+  "name": "carlos-ferreira-treinador",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "@hookform/resolvers": "^2.9.10",
+    "eslint": "^8.29.0",
+    "inputmask": "^5.0.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.41.5",
+    "react-input-mask": "^2.0.4",
+    "react-router-dom": "^6.6.1",
+    "styled-components": "^5.3.6",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react": "^3.0.0",
+    "eslint-plugin-react": "^7.31.11",
+    "vite": "^4.0.0"
+  }
+}

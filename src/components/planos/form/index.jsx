@@ -107,6 +107,7 @@ export const Form = ({ displayPersonalData, selectedPlan, myForm }) => {
           {errors.Nome && (
             <span className="errorMsg">{errors.Nome.message}</span>
           )}
+          <span className="birthday" >DATA DE NASCIMENTO</span>
           <input
             type="date"
             placeholder="Data de Nascimento"

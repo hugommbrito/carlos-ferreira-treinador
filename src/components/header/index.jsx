@@ -9,7 +9,7 @@ export const Header = () => {
     return (
         <StyledHeader >
             <div className="container">
-                <img src={logoSmall} alt="Logo Carlos Ferreira" onClick={() => navigate('/main')} />
+                <img src={logoSmall} alt="Logo Carlos Ferreira" onClick={() => navigate('/')} />
             </div>
         </StyledHeader>
     )

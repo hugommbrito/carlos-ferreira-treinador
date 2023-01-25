@@ -150,7 +150,7 @@ export const Main = () => {
                         <StepBlock 
                         number='03'
                         title='AVALIAÇÃO'
-                        text='Após 30 dias eu vou pedir as suas fotos de avaliação. Me mantendo atualizado sobre sua evolução, colhendo feedbacks com foco no seu objetivo'
+                        text='Após 30 dias repetiremos as suas fotos de avaliação. Me mantendo atualizado sobre sua evolução, colhendo feedbacks com foco no seu objetivo'
                         />
                     }
                 </div>

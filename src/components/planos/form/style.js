@@ -59,7 +59,7 @@ export const StyledForm = styled.div`
         span{
             display: block;
             margin: -15px 0 8px;
-
+            
             font-family: 'Lexend Deca', sans-serif;
             color: var(--color-grey-2);
             font-size: 10px;
@@ -67,7 +67,12 @@ export const StyledForm = styled.div`
         
         .errorMsg{
             color: var(--color-primary);
-
+            
+        }
+        
+        .birthday{
+            color: var(--color-grey-1);
+            margin: 0;
         }
     }
 

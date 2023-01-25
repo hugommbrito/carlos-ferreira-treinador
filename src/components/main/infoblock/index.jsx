@@ -5,7 +5,7 @@ export const InfoSet = () => {
         <StyledInfoSet >
             <StyledInfoCard>
                 <h3>TREINO PERSONALIZADO</h3>
-                <p>Treinos Exclusivos e Diferentes, pode Treinar em Casa ou na academia, acesso App de treino, Vídeos explicativos das execuções, contato via WhatsApp, para você evoluir da forma mais eficiente e rápida.</p>
+                <p>Treinos Exclusivos e Diferentes, em Casa ou na academia, acesso ao App de treino, Vídeos explicativos das execuções, contato via WhatsApp, para você evoluir da forma mais eficiente e rápida.</p>
             </StyledInfoCard>
             <StyledInfoCard>
                 <h3>CHECKSHAPE MENSAL</h3>

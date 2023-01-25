@@ -9,7 +9,7 @@ export const RoutesStructure =() => {
             <Route path='/' element={<Main />} />
             <Route path='/planos' element={<Planos />} />
 
-            <Route path='*' element={<Navigate to='/main' />} />
+            <Route path='*' element={<Navigate to='/' />} />
         </Routes>
     )
 }

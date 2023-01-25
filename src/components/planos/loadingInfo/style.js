@@ -29,10 +29,17 @@ export const StyledLoading = styled.div`
         width: 120px;
         height: 120px;
         animation: spin 2s linear infinite;
+        flex-shrink: 0;
     }
 
     h3{
         text-align: center;
+    }
+    h4{
+        text-align: center;
+        color: var(--color-grey-0);
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 14px;
     }
 
     @keyframes spin {

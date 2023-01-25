@@ -30,7 +30,7 @@ export const StyledInfoCard = styled.div`
 
 export const StyledInfoSet = styled.div`
     width: 85%;
-    margin: 10rem auto;
+    margin: 5rem auto;
 
     @media (min-width: 900px) {
         display: flex;

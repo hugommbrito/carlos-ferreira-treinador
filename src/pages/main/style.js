@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledMain = styled.main`
 
     .textAndPicDiv, .stepBlocks, .progressBarDiv, .picturesBlock, .finalBlock{
-        min-height: 40vh;
+        min-height: 25vh;
     }
 
 

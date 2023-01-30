@@ -10,13 +10,12 @@ import { StyledForm } from "./style";
 import { Loading } from "../loadingInfo";
 
 export const Form = ({ displayPersonalData, selectedPlan, myForm }) => {
-  const pgto = useRef(null);
+  const anamnese = useRef(null);
   const [anamneseDisplay, setAnamneseDisplay] = useState(false);
-  const [pagamentoDisplay, setPagamentoDisplay] = useState(false);
+  // const [pagamentoDisplay, setPagamentoDisplay] = useState(false);
   const [loadingDisplay, setLoadingDisplay] = useState(false);
 
-  const handleClick = (e) => {
-    e.preventDefault();
+  const sendToPayment = () => {
 
     if (selectedPlan === "anual") {
       window.location.replace(
@@ -85,18 +84,19 @@ export const Form = ({ displayPersonalData, selectedPlan, myForm }) => {
     } catch (error) {
       console.error(error);
     } finally {
-      setLoadingDisplay(false);
+      setTimeout(() => {
+        sendToPayment()
+        // setLoadingDisplay(false);
+      }, 3000);
     }
 
-    setPagamentoDisplay(true);
-    pgto.current.scrollIntoView();
   };
 
   return (
     <StyledForm
       viewPersonalData={displayPersonalData}
       viewAnamnese={anamneseDisplay}
-      viewPagamento={pagamentoDisplay}
+      // viewPagamento={pagamentoDisplay}
       ref={myForm}
     >
       {loadingDisplay && <Loading />}
@@ -107,7 +107,7 @@ export const Form = ({ displayPersonalData, selectedPlan, myForm }) => {
           {errors.Nome && (
             <span className="errorMsg">{errors.Nome.message}</span>
           )}
-          <span className="birthday" >DATA DE NASCIMENTO</span>
+          <span className="birthday" >Data de Nascimento</span>
           <input
             type="date"
             placeholder="Data de Nascimento"
@@ -161,6 +161,10 @@ export const Form = ({ displayPersonalData, selectedPlan, myForm }) => {
               onClick={(e) => {
                 e.preventDefault();
                 setAnamneseDisplay(true);
+                setTimeout(() => {
+                  anamnese.current.scrollIntoView();
+
+                }, 50)
               }}
             >
               FAZER ANAMNESE AGORA
@@ -170,7 +174,7 @@ export const Form = ({ displayPersonalData, selectedPlan, myForm }) => {
             </StyledPageButton>
           </div>
         </div>
-        <div className="anamnese">
+        <div className="anamnese" ref={anamnese} >
           <h3>Anamnese</h3>
           <input
             type="text"
@@ -273,7 +277,7 @@ export const Form = ({ displayPersonalData, selectedPlan, myForm }) => {
             SEGUIR PARA O PAGAMENTO
           </StyledPageButton>
         </div>
-        <div className="pagamento" ref={pgto}>
+        {/* <div className="pagamento" ref={pgto}>
           <h3>Pagamento</h3>
           <p>
             Você está a um passo de fazer parte do Carlos Ferreira Team e
@@ -283,7 +287,7 @@ export const Form = ({ displayPersonalData, selectedPlan, myForm }) => {
           <StyledPageButton onClick={(e) => handleClick(e)}>
             PAGAMENTO
           </StyledPageButton>
-        </div>
+        </div> */}
       </form>
     </StyledForm>
   );
